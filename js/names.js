@@ -13,3 +13,6 @@ function personObject(firstName, lastName) {
 // to check function above: 
 const personA = personObject("John", "Smith");
 console.log(personA); 
+
+// export the function
+module.exports = personObject;

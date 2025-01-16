@@ -10,3 +10,6 @@ function hobbiesList(hobbyOne, hobbyTwo, hobbyThree) {
 // checking function
 const hobbiesA = hobbiesList("surfing", "paragliding", "skitouring");
 console.log(hobbiesA); 
+
+// export function
+module.exports = hobbiesList;
