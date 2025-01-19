@@ -11,13 +11,18 @@ const personObject = require("./names.js");
 const hobbiesList = require("./hobbies.js");
 
 // Crea una funzione che non ha parametri. La funzione dovrebbe restituire un oggetto con due proprietà: fullName ed hobbies. All'interno della tua funzione, usa le tue due funzioni precedenti per costruire l'oggetto 
-function personAndHobbies() {
-    const fullName = personObject;
-    const hobbies = hobbiesList;
+
+const person = () => {
+    const name = personObject("John", "Smith");
+    const hobbies = hobbiesList("surfing", "paragliding", "skitouring");
+
     return {
-        fullName: fullName,
-        hobbies: hobbies,
-    };
+        fullName: `${name.firstName} ${name.lastName}`,
+        hobbies
+    }
 }
+
+console.log(person)
+
 
 
